@@ -1,0 +1,4 @@
+# Placeholder for hero background image
+# Replace this with an actual facility management hero image
+# Recommended size: 1920x1080 or higher
+# The Hero component currently references /hero-bg.jpg
