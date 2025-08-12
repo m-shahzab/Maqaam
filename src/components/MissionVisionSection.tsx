@@ -10,6 +10,7 @@ import {
   Leaf,
   Users,
 } from "lucide-react";
+import Image from "next/image";
 
 interface MissionVisionSectionProps {
   scrollToSection: (sectionId: string) => void;
@@ -195,10 +196,12 @@ export default function MissionVisionSection({
           {/* Visual */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img
+              <Image
                 src={missionVisionContent[activeTab].image}
                 alt={`${missionVisionContent[activeTab].label} illustration`}
                 className="w-full h-72 md:h-96 object-cover"
+                width={960}
+                height={720}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
               <span className="absolute top-4 left-4 bg-white text-teal-700 text-sm font-semibold px-3 py-1 rounded-full shadow">

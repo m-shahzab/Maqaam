@@ -2,6 +2,7 @@
 
 import React from "react";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function ServicesSection() {
   const services = [
@@ -67,10 +68,12 @@ export default function ServicesSection() {
               className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden group"
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  width={800}
+                  height={600}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-900/80 to-transparent"></div>
                 <h3 className="absolute bottom-4 left-6 text-2xl font-bold text-white">

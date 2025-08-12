@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Users, Target, Briefcase } from "lucide-react";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -18,10 +19,12 @@ export default function AboutSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <img
+            <Image
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop"
               alt="About Maqaam Alamer team at work"
               className="rounded-xl shadow-lg w-full"
+              width={800}
+              height={600}
             />
           </div>
           <div>
