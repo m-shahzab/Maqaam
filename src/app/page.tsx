@@ -1,4 +1,4 @@
-import MaqaamAlamerWebsite from "./pagecopy";
+import { MaqaamAlamerWebsite } from "@/components";
 
 export default function HomePage() {
   return (

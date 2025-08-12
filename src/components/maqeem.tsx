@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
@@ -9,7 +10,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-function MaqaamAlamerWebsite() {
+export function MaqaamAlamerWebsite() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
