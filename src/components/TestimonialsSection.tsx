@@ -108,7 +108,7 @@ export default function TestimonialsSection() {
               </div>
 
               <p className="text-gray-700 mb-4 flex-grow">
-                "{testimonial.content}"
+                {testimonial.content}
               </p>
 
               <div className="flex space-x-1">
