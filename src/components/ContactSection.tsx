@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { ContactInfo } from "./ContactInfo";
 
 export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -25,20 +25,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          <div className="space-y-6">
-            <div className="flex items-center gap-4 text-gray-700">
-              <Phone className="w-6 h-6 text-teal-600" />
-              <span className="text-lg">+971 55 123 4567</span>
-            </div>
-            <div className="flex items-center gap-4 text-gray-700">
-              <Mail className="w-6 h-6 text-teal-600" />
-              <span className="text-lg">info@maqaamalamer.ae</span>
-            </div>
-            <div className="flex items-center gap-4 text-gray-700">
-              <MapPin className="w-6 h-6 text-teal-600" />
-              <span className="text-lg">Dubai, United Arab Emirates</span>
-            </div>
-          </div>
+          <ContactInfo className="text-gray-600" />
 
           <form
             onSubmit={handleSubmit}
@@ -49,21 +36,21 @@ export default function ContactSection() {
               name="name"
               placeholder="Your Name"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black"
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
               required
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black"
             />
             <textarea
               name="message"
               placeholder="Your Message"
               required
               rows={4}
-              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 text-black"
             ></textarea>
             <button
               type="submit"
