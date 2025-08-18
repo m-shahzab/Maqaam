@@ -12,7 +12,7 @@ export function ContactInfo({
     <div className={`space-y-6 ${className}`}>
       <div className="flex items-center gap-4">
         <Phone className={`w-6 h-6 ${iconColor}`} />
-        <span className="text-lg">+971 56 943 4682</span>
+        <span className="text-lg">+971 54 23 90305</span>
       </div>
       <div className="flex items-center gap-4">
         <Mail className={`w-6 h-6 ${iconColor}`} />
